@@ -42,6 +42,112 @@
                 "fr": "de crise majeur :",
                 "en": "of major crisis :"
             }
+        },
+        "cards": [
+            {
+                "img": "logo.png",
+                "title": {
+                    "fr": "Fermez portes, fenêtres et aérations.",
+                    "en": "Close doors, windows and vents."
+                }
+            },
+            {
+                "img": "logo.png",
+                "title": {
+                    "fr": "Coupez le gaz et l’électricité",
+                    "en": "Turn off the gas and electricity"
+                }
+            },
+            {
+                "img": "logo.png",
+                "title": {
+                    "fr": "Prévoillez une réserve d’eau potable et des lampes de secours.",
+                    "en": "Provide a supply of drinking water and emergency lamps."
+                }
+            },
+            {
+                "img": "logo.png",
+                "title": {
+                    "fr": "N’allez pas chercher votre enfant à l’école.",
+                    "en": "Do not pick up your child from school."
+                }
+            },
+            {
+                "img": "logo.png",
+                "title": {
+                    "fr": "Évitez les déplacements inutiles",
+                    "en": "Avoid unnecessary travel"
+                }
+            },
+            {
+                "img": "logo.png",
+                "title": {
+                    "fr": "Essayez de vous informer à l’aide des radios locales",
+                    "en": "Try to find out with the help of local radio stations"
+                }
+            }
+        ],
+        "thirdTitle": {
+            "mainTitle": {
+                "fr": "Informations utiles",
+                "en": "Useful informations"
+            },
+            "lightTitle": {
+                "fr": "Documents consultables :",
+                "en": "Documents available for consultation :"
+            }
+        },
+        "documents": {
+            "paragraph": {
+                "fr": "Les documents suivant sont consultables en Mairie, à la Police Municipale, et au Centre Technique de la ville.",
+                "en": "The following documents can be consulted in the Town Hall, the Municipal Police, and the Technical Centre of the city."
+            },
+            "lists": [
+                {
+                    "fr": "Dossier départemental des risques majeurs (DDRM), établi par le préfet décrit l’ensemble des risques majeurs auxquels chacune des communes des Bouches-du Rhône est exposée.",
+                    "en": "Departmental file of major risks (DDRM), drawn up by the prefect describes all the major risks to which each of the communes of the Bouches-du-Rhône is exposed."
+                },
+                {
+                    "fr": "Cartes et études traitant des risques majeurs annexées au document d’urbanisme.",
+                    "en": "Maps and studies dealing with major risks annexed to the urban planning document."
+                },
+                {
+                    "fr": "Plan communal de sauvegarde (PCS).",
+                    "en": "Municipal Safeguard Plan (MSP)."
+                }
+            ],
+            "document": {
+                "fr": "Le document d’information communal sur les risques majeurs (DICRIM), est également consultable ici :",
+                "en": "The municipal information document on major risks (DICRIM) can also be consulted here :"
+            }
+        },
+        "fourthTitle": {
+            "mainTitle": {
+                "fr": "Signalez",
+                "en": "Signal"
+            },
+            "lightTitle": {
+                "fr": "un incident :",
+                "en": "an incident :"
+            }
+        },
+        "form": {
+            "firstInput": {
+                "fr": "Sujet",
+                "en": "Subject"
+            },
+            "secondInput": {
+                "fr": "Nom",
+                "en": "Name"
+            },
+            "thirdInput": {
+                "fr": "Téléphone",
+                "en": "Phone"
+            },
+            "fourthInput": {
+                "fr": "Message",
+                "en": "Message"
+            }
         }
     },
     "alert": {
