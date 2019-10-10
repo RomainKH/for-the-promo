@@ -1,6 +1,9 @@
 {
     "name": "MA SUPER VILLE",
-    "logo": "logo.png",
+    "logo": {
+        "src": "logo.png",
+        "alt": "logo"
+    },
     "colors": {
         "basicColor": "#333333",
         "lightColor": "#acacac",
@@ -16,6 +19,54 @@
                     "fr": "Oh non c'est terrible",
                     "en": "Oh no it's terrible"
                 }
+            }
+        ]
+    },
+    "alert": {
+        "media": [
+            {
+                "image": {
+                    "src": "logo.png",
+                    "alt": "super média"
+                },
+                "link": "https://mescouilles.fr"
+            },
+            {
+                "image": {
+                    "src": "logo.png",
+                    "alt": "super média"
+                },
+                "link": "https://mescouilles.fr"
+            }
+        ],
+        "historic": [
+            {
+                "date": {
+                    "hour": "20h30",
+                    "day": "09",
+                    "month": "10"
+                },
+                "text": {
+                    "fr": "Classifieds are usually the first place you think of when you are getting ready to make a purchase. Whether you want to purchase a vehicle, bed, or pet",
+                    "en": "Classifieds are usually the first place you think of when you are getting ready to make a purchase. Whether you want to purchase a vehicle, bed, or pet"
+                },
+                "link": "https://mescouilles.fr",
+                "image": {
+                    "src": "logo.png",
+                    "alt": "Image test"
+                }
+            },
+            {
+                "date": {
+                    "hour": "20h30",
+                    "day": "09",
+                    "month": "10"
+                },
+                "text": {
+                    "fr": "Classifieds are usually the first place you think of when you are getting ready to make a purchase. Whether you want to purchase a vehicle, bed, or pet",
+                    "en": "Classifieds are usually the first place you think of when you are getting ready to make a purchase. Whether you want to purchase a vehicle, bed, or pet"
+                },
+                "link": "https://mescouilles.fr"
             }
         ]
     }

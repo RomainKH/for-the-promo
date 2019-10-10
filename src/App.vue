@@ -1,8 +1,6 @@
 <template>
     <div id="app">
-        <!-- <header class="topbar">
-            <img src="./assets/logo.png" alt="logo" />
-        </header>-->
+        <Topbar :data="data" />
         <div class="container">
             <component :is="getComponent" />
         </div>
@@ -12,16 +10,19 @@
 <script>
 import data from './data.json'
 
-import TimelineCard from './components/Timeline-Card'
 import Home from './views/Home'
-import Map from './components/map'
+import Alert from './views/Alert'
+import Dashboard from './views/Dashboard'
+
+import Topbar from './components/Header'
 
 export default {
     name: 'App',
     components: {
         Home,
-        Map,
-        TimelineCard,
+        Dashboard,
+        Alert,
+        Topbar,
     },
     data() {
         return { lang: 'fr', route: '/' }
@@ -30,6 +31,7 @@ export default {
         const [lang, route] = this.parseRoute()
         this.lang = lang
         this.route = route
+        this.data = data
     },
     mounted() {
         document.documentElement.style.setProperty(
@@ -49,8 +51,12 @@ export default {
         getComponent() {
             let component = 'Home'
             switch (this.route) {
-                case 'map':
-                    component = 'Map'
+                case 'dashboard':
+                    component = 'Dashboard'
+                    break
+
+                case 'alert':
+                    component = 'Alert'
                     break
 
                 default:
@@ -78,6 +84,6 @@ export default {
 }
 
 .container {
-    padding: 0px 10px;
+    padding-top: 100px;
 }
 </style>
