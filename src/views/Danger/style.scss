@@ -8,20 +8,10 @@
         flex-direction: column;
         align-items: flex-start;
 
-        .danger-list {
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
-            grid-gap: 1.5rem;
+        .card-container {
+            display: flex;
             justify-content: space-between;
-
-            .media-item {
-                height: 4.5rem;
-
-                .item-image {
-                    height: 100%;
-                }
-            }
+            flex-wrap: wrap;
         }
     }
 
