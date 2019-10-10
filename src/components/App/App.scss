@@ -10,5 +10,21 @@ body {
 
     #app {
         font-family: 'Muli', sans-serif;
+        padding: 8rem 0 6.2rem;
+
+        .topbar {
+            position: fixed;
+            width: 100%;
+            height: 60px;
+            background: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            padding: 0 10px;
+        }
     }
 }

@@ -4,6 +4,7 @@
         <div class="container">
             <component :is="getComponent" />
         </div>
+        <Footer :data="data.footer" />
         <Navbar :route="route" :lang="lang" />
     </div>
 </template>
@@ -19,6 +20,7 @@ import Dashboard from './views/Dashboard/index'
 
 import Navbar from './components/Nav-Bar'
 import Topbar from './components/Header'
+import Footer from './components/Footer'
 
 export default {
     name: 'App',
@@ -30,6 +32,7 @@ export default {
         Error404,
         Danger,
         Navbar,
+        Footer,
     },
     data() {
         return { lang: 'fr', route: '/' }
@@ -92,20 +95,4 @@ export default {
 <style lang="scss">
 @import '@/components/App/Reset.scss';
 @import '@/components/App/App.scss';
-
-.topbar {
-    position: fixed;
-    width: 100%;
-    height: 60px;
-    background: #fff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    padding: 0 10px;
-    padding-top: 100px;
-}
 </style>
