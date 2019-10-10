@@ -2,10 +2,11 @@
     width: 100%;
     padding: 2rem 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     border-left: none;
     border-right: none;
+    position: relative;
 
     &:nth-of-type(odd) {
         border-bottom: 0.5px solid #dddddd;
@@ -25,7 +26,8 @@
         align-items: flex-start;
         font-weight: 600;
         margin-right: 2.5rem;
-        flex: 1;
+        background: #ffffff;
+        padding-bottom: 1rem;
 
         .date-day,
         .date-month {
@@ -42,13 +44,16 @@
         }
 
         .date-bar-spacing {
+            position: absolute;
             display: block;
             width: 2px;
-            height: 100%;
+            height: calc(100% - 4rem);
             align-self: center;
             background: var(--accent-color);
             flex-grow: 1;
             margin-top: 0.5rem;
+            z-index: -1;
+            left: 2.9rem;
         }
     }
 
