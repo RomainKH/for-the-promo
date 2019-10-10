@@ -11,6 +11,7 @@
 import data from './data.json'
 
 import Alert from './components/Alert'
+import Danger from './components/Danger'
 import Home from './views/Home'
 import Map from './components/map'
 import Topbar from './components/Header'
@@ -22,6 +23,7 @@ export default {
         Map,
         Alert,
         Topbar,
+        Danger,
     },
     data() {
         return { lang: 'fr', route: '/' }
@@ -56,6 +58,10 @@ export default {
 
                 case 'alert':
                     component = 'Alert'
+                    break
+
+                case 'danger':
+                    component = 'Danger'
                     break
 
                 default:
