@@ -1,8 +1,8 @@
 <template>
     <div id="app">
-        <header class="topbar">
+        <!-- <header class="topbar">
             <img src="./assets/logo.png" alt="logo" />
-        </header>
+        </header>-->
         <div class="container">
             <component :is="getComponent" />
         </div>

@@ -1,14 +1,28 @@
 <template>
-    <div class="home">NIQUE TA MERE SALOPE</div>
+    <div class="home">
+        <div class="container">
+            <Card :img="require('../assets/logo.png')" title="Ma super card 1" />
+            <Card :img="require('../assets/logo.png')" title="Ma super card 2" />
+            <Card :img="require('../assets/logo.png')" title="Ma super card 4" />
+            <Card :img="require('../assets/logo.png')" title="Ma super card 5" />
+        </div>
+    </div>
 </template>
 
 <script>
-import Map from '@/components/map'
-
+import Card from '../components/card'
 export default {
     name: 'home',
     components: {
-        Map,
+        Card,
     },
 }
 </script>
+
+<style lang="scss" scoped>
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+</style>

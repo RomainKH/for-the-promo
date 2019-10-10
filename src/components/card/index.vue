@@ -1,0 +1,16 @@
+<template>
+    <div class="card">
+        <img :src="img" alt="icon" />
+        <h2 class="title">{{title}}</h2>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'Card',
+    props: ['img', 'title'],
+}
+</script>
+
+<style lang="scss" scoped src="./index.scss">
+</style>
