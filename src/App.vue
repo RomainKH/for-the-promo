@@ -4,19 +4,20 @@
         <div class="container">
             <component :is="getComponent" />
         </div>
+        <Navbar :route="route" :lang="lang" />
     </div>
 </template>
 
 <script>
 import data from './data.json'
 
-import Alert from './components/Alert'
-import Danger from './components/Danger'
+import Danger from './views/Danger'
 import Home from './views/Home'
 import Alert from './views/Alert'
 import Error404 from './views/404'
 import Dashboard from './views/Dashboard/index'
 
+import Navbar from './components/Nav-Bar'
 import Topbar from './components/Header'
 
 export default {
@@ -27,6 +28,8 @@ export default {
         Alert,
         Topbar,
         Error404,
+        Danger,
+        Navbar,
     },
     data() {
         return { lang: 'fr', route: '/' }
@@ -75,6 +78,13 @@ export default {
             }
 
             return component
+        },
+    },
+    watch: {
+        $route() {
+            const [lang, route] = this.parseRoute()
+            this.lang = lang
+            this.route = route
         },
     },
 }
