@@ -1,5 +1,5 @@
 <template>
-    <header class="nav-bar-container">
+    <nav class="nav-bar-container">
         <div class="nav-bar-list">
             <router-link :to="`/${lang}/alert`" class="nav-bar-item">
                 <img
@@ -26,7 +26,7 @@
                 <span class="item-title">Urgence</span>
             </router-link>
         </div>
-    </header>
+    </nav>
 </template>
 
 <script>
