@@ -221,6 +221,50 @@
                 "en": "risks :"
             }
         },
+        "cards": [
+            {
+                "img": "flooding.svg",
+                "title": {
+                    "fr": "Innondations",
+                    "en": "Floodings"
+                }
+            },
+            {
+                "img": "earthquake.svg",
+                "title": {
+                    "fr": "Seismes",
+                    "en": "Earthquakes"
+                }
+            },
+            {
+                "img": "fire.svg",
+                "title": {
+                    "fr": "Feux de forêt",
+                    "en": "Forest fires"
+                }
+            },
+            {
+                "img": "hazard.svg",
+                "title": {
+                    "fr": "Matières dangereuses",
+                    "en": "Hazardous materials"
+                }
+            },
+            {
+                "img": "industry.svg",
+                "title": {
+                    "fr": "Accident industriel",
+                    "en": "Industrial accident"
+                }
+            },
+            {
+                "img": "heat.svg",
+                "title": {
+                    "fr": "Canicule",
+                    "en": "Heatwave"
+                }
+            }
+        ],
         "service": {
             "text": {
                 "fr": "Vous pouvez vous inscrire au service “Viappel!”, afin de vous tenir au courant le plus rapidement possible, si vous êtes concernés par un événement.",
