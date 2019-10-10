@@ -5,10 +5,25 @@
             <router-link to="/about">About</router-link>
         </div>
         <router-view />
+        <TimelineCard />
     </div>
 </template>
 
+<script>
+import TimelineCard from '@/components/Timeline-Card'
+
+export default {
+    components: {
+        TimelineCard,
+    },
+    mounted() {},
+}
+</script>
+
 <style lang="scss">
+@import '@/components/App/Reset.scss';
+@import '@/components/App/App.scss';
+
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

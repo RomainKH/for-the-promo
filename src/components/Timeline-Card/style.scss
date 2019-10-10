@@ -1,0 +1,73 @@
+.timeline-item {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 0.5px solid #dddddd;
+    border-left: none;
+    border-right: none;
+
+    .item-date {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-weight: 600;
+        margin-right: 2.5rem;
+        flex: 1;
+
+        .date-day,
+        .date-month {
+            display: block;
+            font-size: 2.4rem;
+        }
+        .date-day {
+            color: var(--accent-text-color);
+        }
+        .date-month {
+            color: var(--light-text-color);
+        }
+
+        .date-bar-spacing {
+            display: block;
+            width: 2px;
+            height: 100%;
+            align-self: center;
+            background: var(--accent-text-color);
+            flex-grow: 1;
+            margin-top: 0.5rem;
+        }
+    }
+    .item-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .info-text {
+            display: block;
+            font-size: 1.4rem;
+            .text-hour {
+                color: var(--accent-text-color);
+                font-weight: 600;
+            }
+            font-weight: 300;
+            line-height: 1.9rem;
+            color: var(--basic-text-color);
+            text-align: left;
+        }
+
+        .info-link {
+            text-decoration: none;
+            color: var(--accent-text-color);
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .info-thumbnail {
+            width: 100%;
+            margin-top: 1rem;
+        }
+    }
+}
