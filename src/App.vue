@@ -12,7 +12,8 @@ import data from './data.json'
 
 import Home from './views/Home'
 import Alert from './views/Alert'
-import Dashboard from './views/Dashboard'
+import Error404 from './views/404'
+import Dashboard from './views/Dashboard/index'
 
 import Topbar from './components/Header'
 
@@ -23,6 +24,7 @@ export default {
         Dashboard,
         Alert,
         Topbar,
+        Error404,
     },
     data() {
         return { lang: 'fr', route: '/' }
@@ -51,6 +53,8 @@ export default {
         getComponent() {
             let component = 'Home'
             switch (this.route) {
+                case '':
+                    break
                 case 'dashboard':
                     component = 'Dashboard'
                     break
@@ -60,6 +64,7 @@ export default {
                     break
 
                 default:
+                    component = 'Error404'
                     break
             }
 
@@ -84,6 +89,7 @@ export default {
 }
 
 .container {
+    padding: 0 10px;
     padding-top: 100px;
 }
 </style>

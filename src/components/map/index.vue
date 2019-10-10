@@ -1,5 +1,5 @@
 <template>
-    <div ref="map" id="map"></div>
+    <div id="map"></div>
 </template>
 
 <script>
@@ -19,16 +19,19 @@ export default {
             15,
         )
 
-        tileLayer('cd ', {
-            attribution:
-                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-            subdomains: 'abcd',
-            maxZoom: 25,
-        }).addTo(this.map)
+        tileLayer(
+            'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+            {
+                attribution:
+                    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                subdomains: 'abcd',
+                maxZoom: 25,
+            },
+        ).addTo(this.map)
 
-        this.addMarker(...data.map.townLatLng)
+        this.addMarker(...data.dashboard.map.townLatLng)
 
-        data.map.incidentLatLngs.forEach(incident => {
+        data.dashboard.map.incidentLatLngs.forEach(incident => {
             this.addMarker(...incident.latLng)
             const [lang, _] = this.parseRoute()
             console.log(this.translate(incident.description))

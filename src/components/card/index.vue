@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <img :src="img" alt="icon" />
+        <img :src="require('../../assets/' + img)" alt="icon" />
         <h2 class="title">{{title}}</h2>
     </div>
 </template>
