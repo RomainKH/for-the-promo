@@ -1,6 +1,16 @@
 <template>
     <div class="not-found">
-        <div class="error">En panne d'inspiration ? On peut t'aider à repartir sur le bon chemin ;)</div>
+        <h1>Oops, rien ne se trouve ici, tu peux quand même écouter une super chanson !</h1>
+        <div class="error">
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/pRpeEdMmmQ0"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        </div>
     </div>
 </template>
 

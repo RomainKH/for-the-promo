@@ -163,22 +163,42 @@
         }
     },
     "alert": {
-        "media": [
+        "firstTitle": {
+            "mainTitle": {
+                "fr": "Les médias",
+                "en": "Media"
+            },
+            "lightTitle": {
+                "fr": "à suive :",
+                "en": "to follow :"
+            }
+        },
+        "medias": [
             {
                 "image": {
                     "src": "logo.png",
                     "alt": "super média"
                 },
-                "link": "https://mescouilles.fr"
+                "link": "https://www.youtube.com/watch?v=pRpeEdMmmQ0"
             },
             {
                 "image": {
                     "src": "logo.png",
                     "alt": "super média"
                 },
-                "link": "https://mescouilles.fr"
+                "link": "https://www.youtube.com/watch?v=pRpeEdMmmQ0"
             }
         ],
+        "secondTitle": {
+            "mainTitle": {
+                "fr": "Alerte inondation !",
+                "en": "Flood alert!"
+            },
+            "lightTitle": {
+                "fr": "Historique :",
+                "en": "History :"
+            }
+        },
         "historic": [
             {
                 "date": {
@@ -187,10 +207,10 @@
                     "month": "10"
                 },
                 "text": {
-                    "fr": "Classifieds are usually the first place you think of when you are getting ready to make a purchase. Whether you want to purchase a vehicle, bed, or pet",
+                    "fr": "Les petites annonces sont généralement le premier endroit auquel vous pensez lorsque vous vous préparez à faire un achat. Que vous souhaitiez acheter un véhicule, un lit ou un animal domestique",
                     "en": "Classifieds are usually the first place you think of when you are getting ready to make a purchase. Whether you want to purchase a vehicle, bed, or pet"
                 },
-                "link": "https://mescouilles.fr",
+                "link": "https://www.youtube.com/watch?v=pRpeEdMmmQ0",
                 "image": {
                     "src": "logo.png",
                     "alt": "Image test"
@@ -203,10 +223,10 @@
                     "month": "10"
                 },
                 "text": {
-                    "fr": "Classifieds are usually the first place you think of when you are getting ready to make a purchase. Whether you want to purchase a vehicle, bed, or pet",
+                    "fr": "Les petites annonces sont généralement le premier endroit auquel vous pensez lorsque vous vous préparez à faire un achat. Que vous souhaitiez acheter un véhicule, un lit ou un animal domestique",
                     "en": "Classifieds are usually the first place you think of when you are getting ready to make a purchase. Whether you want to purchase a vehicle, bed, or pet"
                 },
-                "link": "https://mescouilles.fr"
+                "link": "https://www.youtube.com/watch?v=pRpeEdMmmQ0"
             }
         ]
     },
