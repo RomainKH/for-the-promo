@@ -17,10 +17,10 @@
                 />
                 <span class="item-title">Informations</span>
             </router-link>
-            <router-link :to="`/${lang}/map`" class="nav-bar-item">
+            <router-link :to="`/${lang}/dashboard`" class="nav-bar-item">
                 <img
                     class="item-image"
-                    :src="`/img/navbar/alert${route == 'map' ? '-active' : ''}.svg`"
+                    :src="`/img/navbar/alert${route == 'dashboard' ? '-active' : ''}.svg`"
                     alt="Urgence"
                 />
                 <span class="item-title">Urgence</span>

@@ -211,6 +211,16 @@
         ]
     },
     "danger": {
+        "firstTitle": {
+            "mainTitle": {
+                "fr": "Les risques",
+                "en": "Majors"
+            },
+            "lightTitle": {
+                "fr": "majeurs :",
+                "en": "risks :"
+            }
+        },
         "service": {
             "text": {
                 "fr": "Vous pouvez vous inscrire au service “Viappel!”, afin de vous tenir au courant le plus rapidement possible, si vous êtes concernés par un événement.",
