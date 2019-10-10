@@ -45,42 +45,42 @@
         },
         "cards": [
             {
-                "img": "logo.png",
+                "img": "window.svg",
                 "title": {
                     "fr": "Fermez portes, fenêtres et aérations.",
                     "en": "Close doors, windows and vents."
                 }
             },
             {
-                "img": "logo.png",
+                "img": "electricity.svg",
                 "title": {
                     "fr": "Coupez le gaz et l’électricité",
                     "en": "Turn off the gas and electricity"
                 }
             },
             {
-                "img": "logo.png",
+                "img": "water.svg",
                 "title": {
                     "fr": "Prévoillez une réserve d’eau potable et des lampes de secours.",
                     "en": "Provide a supply of drinking water and emergency lamps."
                 }
             },
             {
-                "img": "logo.png",
+                "img": "school.svg",
                 "title": {
                     "fr": "N’allez pas chercher votre enfant à l’école.",
                     "en": "Do not pick up your child from school."
                 }
             },
             {
-                "img": "logo.png",
+                "img": "person.svg",
                 "title": {
                     "fr": "Évitez les déplacements inutiles",
                     "en": "Avoid unnecessary travel"
                 }
             },
             {
-                "img": "logo.png",
+                "img": "radio.svg",
                 "title": {
                     "fr": "Essayez de vous informer à l’aide des radios locales",
                     "en": "Try to find out with the help of local radio stations"
