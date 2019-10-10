@@ -32,6 +32,16 @@
                     }
                 }
             ]
+        },
+        "secondTitle": {
+            "mainTitle": {
+                "fr": "Conseil en cas",
+                "en": "Advice in case"
+            },
+            "lightTitle": {
+                "fr": "de crise majeur :",
+                "en": "of major crisis :"
+            }
         }
     },
     "alert": {
