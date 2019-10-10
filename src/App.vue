@@ -10,6 +10,8 @@
 <script>
 import data from './data.json'
 
+import Alert from './components/Alert'
+import Danger from './components/Danger'
 import Home from './views/Home'
 import Alert from './views/Alert'
 import Error404 from './views/404'
@@ -61,6 +63,10 @@ export default {
 
                 case 'alert':
                     component = 'Alert'
+                    break
+
+                case 'danger':
+                    component = 'Danger'
                     break
 
                 default:

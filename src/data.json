@@ -81,5 +81,14 @@
                 "link": "https://mescouilles.fr"
             }
         ]
+    },
+    "danger": {
+        "service": {
+            "text": {
+                "fr": "Vous pouvez vous inscrire au service “Viappel!”, afin de vous tenir au courant le plus rapidement possible, si vous êtes concernés par un événement.",
+                "en": "You can register for the \"Viappel!\" service, in order to stay informed as soon as possible, if you are concerned by an event."
+            },
+            "button": "S’inscrire sur Viappel"
+        }
     }
 }

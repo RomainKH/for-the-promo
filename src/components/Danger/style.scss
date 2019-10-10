@@ -1,0 +1,56 @@
+.danger-page-container {
+    width: 100%;
+
+    .danger-container {
+        width: 100%;
+        padding: 2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .danger-list {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
+            grid-gap: 1.5rem;
+            justify-content: space-between;
+
+            .media-item {
+                height: 4.5rem;
+
+                .item-image {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .service-container {
+        width: 100%;
+        padding: 2rem 1.5rem;
+        font-size: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .service-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .text {
+                color: var(--basic-color);
+                line-height: 1.8rem;
+            }
+
+            .button {
+                margin-top: 2.5rem;
+                border-radius: 6px;
+                background: var(--accent-color);
+                color: #ffffff;
+                padding: 1.5rem 2rem;
+                align-self: flex-end;
+            }
+        }
+    }
+}
