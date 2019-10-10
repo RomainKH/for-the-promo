@@ -29,27 +29,54 @@ export default {
             },
         ).addTo(this.map)
 
-        this.addMarker(...data.dashboard.map.townLatLng)
+        this.map.on('click', e => {
+            console.log('LatLng: ', e.latlng)
+        })
 
         data.dashboard.map.incidentLatLngs.forEach(incident => {
-            this.addMarker(...incident.latLng)
+            this.addMarker(incident.type, ...incident.latLng)
             const [lang, _] = this.parseRoute()
-            console.log(this.translate(incident.description))
         })
     },
     methods: {
-        addMarker(lat, lng) {
-            const iconEl = icon({
-                iconUrl:
-                    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAElBMVEVHcEwac+gac+gac+gac+gac+gtu67uAAAABnRSTlMAV+n+gxT6zFvXAAAAlElEQVR4AWKAAyFFQNn0doIwDABQtIUOIGQEJ7AZQfx3/2ksePEgyefl5AnZlrHPeVvimPOxwomC10BBFERBFERBdIEo+ETBA7Xihg4xGixGg6/vStHguxgdTRQvehebPs9ftNE8m148uupe7PA9yhCDHb4Y7JrF4P89QS8CoiAKoiAKrhREQRREQRREV7h+hOXLfACI4EsohCj6BwAAAABJRU5ErkJggg==',
-                iconSize: [40, 40],
-                iconAnchor: [20, 40],
-            })
+        addMarker(type, lat, lng) {
+            const iconEl = this.makeIcon(type)
 
             const markerEl = marker([lat, lng], { icon: iconEl })
             markerEl.addTo(this.map)
             markerEl.on('click', e => {
                 console.log(e)
+            })
+        },
+        makeIcon(type) {
+            let iconName = ''
+            switch (type) {
+                case 'flooding':
+                    iconName = 'flooding'
+                    break
+                case 'shelter':
+                    iconName = 'home'
+                    break
+                case 'industry':
+                    iconName = 'industry'
+                    break
+                case 'electricity':
+                    iconName = 'electricity'
+                    break
+                case 'worksite':
+                    iconName = 'worksite'
+                    break
+                default:
+                    throw new Error(
+                        "Le `type` pour un marker sur la carte n'est pas valide",
+                    )
+                    break
+            }
+
+            return icon({
+                iconUrl: require(`../../assets/${iconName}-marker.png`),
+                iconSize: [38.25, 46.125],
+                iconAnchor: [19.125, 46.125],
             })
         },
     },
