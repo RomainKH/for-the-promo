@@ -2,13 +2,13 @@
     <div class="alert-page-container">
         <div class="media-container">
             <title-bloc
-                :mainTitle="lang == 'fr' ? 'Les médias' : 'Media'"
-                :lightTitle="lang == 'fr' ? 'à suivre' : 'to follow'"
+                :mainTitle="translate(data.alert.firstTitle.mainTitle)"
+                :lightTitle="translate(data.alert.firstTitle.lightTitle)"
             />
             <div class="media-list">
                 <a
                     class="media-item"
-                    v-for="media in data.alert.media"
+                    v-for="media in data.alert.medias"
                     :key="media.id"
                     :href="media.link"
                     target="_blank"
@@ -23,8 +23,8 @@
         </div>
         <div class="timeline-container">
             <title-bloc
-                :mainTitle="lang == 'fr' ? 'Alerte inondation !' : 'Flood alert!'"
-                :lightTitle="lang == 'fr' ? 'Historique' : 'History'"
+                :mainTitle="translate(data.alert.secondTitle.mainTitle)"
+                :lightTitle="translate(data.alert.secondTitle.lightTitle)"
             />
             <timeline-card
                 v-for="timeline in data.alert.historic"

@@ -83,4 +83,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped src="./index.scss"></style>
+<style lang="scss" scoped src="./style.scss"></style>
