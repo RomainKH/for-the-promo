@@ -24,12 +24,24 @@
             "townLatLng": [43.80478427040863, 4.658995550125838],
             "incidentLatLngs": [
                 {
-                    "type": "inondation",
-                    "latLng": [43.70478427040863, 4.558995550125838],
-                    "description": {
-                        "fr": "Oh non c'est terrible",
-                        "en": "Oh no it's terrible"
-                    }
+                    "type": "flooding",
+                    "latLng": [43.80469988345253, 4.654105799272656]
+                },
+                {
+                    "type": "shelter",
+                    "latLng": [43.807666270493506, 4.65872519183904]
+                },
+                {
+                    "type": "electricity",
+                    "latLng": [43.801295813881225, 4.654786158353091]
+                },
+                {
+                    "type": "worksite",
+                    "latLng": [43.80329880059163, 4.660112857818604]
+                },
+                {
+                    "type": "industry",
+                    "latLng": [43.79167915126339, 4.656938128173352]
                 }
             ]
         },
