@@ -1,8 +1,6 @@
 <template>
     <div id="app">
-        <header class="topbar">
-            <img src="./assets/logo.png" alt="logo" />
-        </header>
+        <Topbar :data="data.header" />
         <div class="container">
             <component :is="getComponent" />
         </div>
@@ -12,16 +10,18 @@
 <script>
 import data from './data.json'
 
-import TimelineCard from './components/Timeline-Card'
+import Alert from './components/Alert'
 import Home from './views/Home'
 import Map from './components/map'
+import Topbar from './components/Header'
 
 export default {
     name: 'App',
     components: {
         Home,
         Map,
-        TimelineCard,
+        Alert,
+        Topbar,
     },
     data() {
         return { lang: 'fr', route: '/' }
@@ -30,6 +30,7 @@ export default {
         const [lang, route] = this.parseRoute()
         this.lang = lang
         this.route = route
+        this.data = data
     },
     mounted() {
         document.documentElement.style.setProperty(
@@ -51,6 +52,10 @@ export default {
             switch (this.route) {
                 case 'map':
                     component = 'Map'
+                    break
+
+                case 'alert':
+                    component = 'Alert'
                     break
 
                 default:
@@ -78,6 +83,6 @@ export default {
 }
 
 .container {
-    padding: 0px 10px;
+    padding-top: 100px;
 }
 </style>
