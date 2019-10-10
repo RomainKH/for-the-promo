@@ -6,7 +6,7 @@
 export default {
     name: 'redirect',
     mounted() {
-        this.$router.push('/fr')
+        this.$router.push('/fr/danger')
     },
 }
 </script>

@@ -62,6 +62,7 @@ export default {
             let component = 'Home'
             switch (this.route) {
                 case '':
+                    this.$router.push('/fr/danger')
                     break
                 case 'dashboard':
                     component = 'Dashboard'
