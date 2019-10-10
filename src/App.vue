@@ -11,7 +11,6 @@
 <script>
 import Home from './views/Home'
 import Map from './components/map'
-const VALID_LANGS = ['fr', 'en']
 
 export default {
     name: 'App',
@@ -23,16 +22,9 @@ export default {
         return { lang: 'fr', route: '/' }
     },
     created() {
-        const splittedPath = this.$route.path.substr(1).split('/')
-        const lang = splittedPath[0]
-        const routes = splittedPath.splice(1)
-        const route = routes.join('/')
-
-        if (!VALID_LANGS.includes(lang)) this.$router.push(`/fr/${route}`)
-
+        const [lang, route] = this.parseRoute()
         this.lang = lang
         this.route = route
-        console.log(this.route)
     },
     computed: {
         getComponent() {
