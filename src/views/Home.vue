@@ -1,7 +1,5 @@
 <template>
-    <div class="home">
-        <Map />
-    </div>
+    <div class="home">NIQUE TA MERE SALOPE</div>
 </template>
 
 <script>

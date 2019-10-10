@@ -3,7 +3,8 @@
 </template>
 
 <script>
-import { map, tileLayer, marker } from 'leaflet'
+import data from '../../data.json'
+import { map, tileLayer, marker, icon } from 'leaflet'
 
 export default {
     name: 'Map',
@@ -28,11 +29,22 @@ export default {
             },
         ).addTo(this.map)
 
-        this.addMarker(43.80478427040863, 4.658995550125838)
+        this.addMarker(...data.map.townLatLng)
+
+        data.map.incidentLatLngs.forEach(incident => {
+            this.addMarker(...incident.latLng)
+        })
     },
     methods: {
         addMarker(lat, lng) {
-            const markerEl = marker([lat, lng])
+            const iconEl = icon({
+                iconUrl:
+                    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAAElBMVEVHcEwac+gac+gac+gac+gac+gtu67uAAAABnRSTlMAV+n+gxT6zFvXAAAAlElEQVR4AWKAAyFFQNn0doIwDABQtIUOIGQEJ7AZQfx3/2ksePEgyefl5AnZlrHPeVvimPOxwomC10BBFERBFERBdIEo+ETBA7Xihg4xGixGg6/vStHguxgdTRQvehebPs9ftNE8m148uupe7PA9yhCDHb4Y7JrF4P89QS8CoiAKoiAKrhREQRREQRREV7h+hOXLfACI4EsohCj6BwAAAABJRU5ErkJggg==',
+                iconSize: [40, 40],
+                iconAnchor: [20, 40],
+            })
+
+            const markerEl = marker([lat, lng], { icon: iconEl })
             markerEl.addTo(this.map)
             markerEl.on('click', e => {
                 console.log(e)
