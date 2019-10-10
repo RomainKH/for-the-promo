@@ -1,0 +1,11 @@
+{
+  "card": {
+    {}
+  },
+  "id": 1,
+  "title": {
+    "en": "Hello Card",
+    "fr": "Bonjour la carte"
+  },
+  "image": "img/icons/android-chrome-192x192.png"
+}
