@@ -8,7 +8,10 @@
         </div>
     </div>
 </template>
+
 <script>
+import data from './data.json'
+
 import TimelineCard from './components/Timeline-Card'
 import Home from './views/Home'
 import Map from './components/map'
@@ -27,6 +30,20 @@ export default {
         const [lang, route] = this.parseRoute()
         this.lang = lang
         this.route = route
+    },
+    mounted() {
+        document.documentElement.style.setProperty(
+            '--basic-color',
+            data.colors.basicColor,
+        )
+        document.documentElement.style.setProperty(
+            '--light-color',
+            data.colors.lightColor,
+        )
+        document.documentElement.style.setProperty(
+            '--accent-color',
+            data.colors.accentColor,
+        )
     },
     computed: {
         getComponent() {

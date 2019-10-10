@@ -1,4 +1,11 @@
 {
+    "name": "MA SUPER VILLE",
+    "logo": "logo.png",
+    "colors": {
+        "basicColor": "#333333",
+        "lightColor": "#acacac",
+        "accentColor": "#3373c3"
+    },
     "map": {
         "townLatLng": [43.80478427040863, 4.658995550125838],
         "incidentLatLngs": [

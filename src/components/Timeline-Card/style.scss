@@ -22,11 +22,13 @@
             display: block;
             font-size: 2.4rem;
         }
+
         .date-day {
-            color: var(--accent-text-color);
+            color: var(--accent-color);
         }
+
         .date-month {
-            color: var(--light-text-color);
+            color: var(--light-color);
         }
 
         .date-bar-spacing {
@@ -34,11 +36,12 @@
             width: 2px;
             height: 100%;
             align-self: center;
-            background: var(--accent-text-color);
+            background: var(--accent-color);
             flex-grow: 1;
             margin-top: 0.5rem;
         }
     }
+
     .item-info-container {
         display: flex;
         flex-direction: column;
@@ -47,19 +50,21 @@
         .info-text {
             display: block;
             font-size: 1.4rem;
+
             .text-hour {
-                color: var(--accent-text-color);
+                color: var(--accent-color);
                 font-weight: 600;
             }
+
             font-weight: 300;
             line-height: 1.9rem;
-            color: var(--basic-text-color);
+            color: var(--basic-color);
             text-align: left;
         }
 
         .info-link {
             text-decoration: none;
-            color: var(--accent-text-color);
+            color: var(--accent-color);
             font-size: 1.4rem;
             font-weight: 600;
             margin-top: 1rem;
