@@ -18,6 +18,10 @@ Vue.mixin({
 
             return [lang, route]
         },
+        translate(sentence) {
+            const [lang, _] = this.parseRoute()
+            return sentence[lang]
+        },
     },
 })
 

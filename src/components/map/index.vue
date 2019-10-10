@@ -33,6 +33,8 @@ export default {
 
         data.map.incidentLatLngs.forEach(incident => {
             this.addMarker(...incident.latLng)
+            const [lang, _] = this.parseRoute()
+            console.log(this.translate(incident.description))
         })
     },
     methods: {

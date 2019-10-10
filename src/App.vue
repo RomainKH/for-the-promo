@@ -9,6 +9,7 @@
     </div>
 </template>
 <script>
+import TimelineCard from './components/Timeline-Card'
 import Home from './views/Home'
 import Map from './components/map'
 
@@ -17,6 +18,7 @@ export default {
     components: {
         Home,
         Map,
+        TimelineCard,
     },
     data() {
         return { lang: 'fr', route: '/' }
@@ -44,6 +46,9 @@ export default {
 }
 </script>
 <style lang="scss">
+@import '@/components/App/Reset.scss';
+@import '@/components/App/App.scss';
+
 .topbar {
     position: fixed;
     width: 100%;

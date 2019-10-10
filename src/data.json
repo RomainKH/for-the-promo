@@ -4,7 +4,11 @@
         "incidentLatLngs": [
             {
                 "type": "inondation",
-                "latLng": [43.70478427040863, 4.558995550125838]
+                "latLng": [43.70478427040863, 4.558995550125838],
+                "description": {
+                    "fr": "Oh non c'est terrible",
+                    "en": "Oh no it's terrible"
+                }
             }
         ]
     }
