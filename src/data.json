@@ -22,7 +22,7 @@
         },
         "map": {
             "townLatLng": [48.8512499, 2.4203398],
-            "initialZoom": 10,
+            "initialZoom": 5,
             "incidentLatLngs": [
                 {
                     "type": "flooding",
