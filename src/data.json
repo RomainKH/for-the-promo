@@ -1,5 +1,5 @@
 {
-    "name": "MA SUPER VILLE",
+    "name": "Dijon",
     "logo": {
         "src": "logo.png",
         "alt": "logo"
@@ -21,8 +21,7 @@
             }
         },
         "map": {
-            "townLatLng": [43.80478427040863, 4.658995550125838],
-            "initialZoom": 15,
+            "townLatLng": [48.8512499, 2.4203398],
             "incidentLatLngs": [
                 {
                     "type": "flooding",
@@ -74,7 +73,7 @@
             {
                 "img": "water.svg",
                 "title": {
-                    "fr": "Prévoillez une réserve d’eau potable et des lampes de secours.",
+                    "fr": "Prévoyez une réserve d’eau potable et des lampes de secours.",
                     "en": "Provide a supply of drinking water and emergency lamps."
                 }
             },
