@@ -2,6 +2,7 @@
     <div id="app">
         <Topbar :data="data" />
         <div class="container">
+            <alert-modal />
             <component :is="getComponent" />
         </div>
         <Footer :data="data.footer" />
@@ -21,6 +22,7 @@ import Dashboard from './views/Dashboard/index'
 import Navbar from './components/Nav-Bar'
 import Topbar from './components/Header'
 import Footer from './components/Footer'
+import AlertModal from './components/Alert'
 
 export default {
     name: 'App',
@@ -33,6 +35,7 @@ export default {
         Danger,
         Navbar,
         Footer,
+        AlertModal,
     },
     data() {
         return { lang: 'fr', route: '/' }

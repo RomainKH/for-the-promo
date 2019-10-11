@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Redirect from './components/redirect'
+import Redirect from './components/Redirect'
 import Home from './views/Home.vue'
 
 Vue.use(Router)
