@@ -60,7 +60,9 @@ export default {
             data.colors.accentColor,
         )
 
-        alert('Ce projet ')
+        alert(
+            "Site réalisé dans le cadre d'une semaine intensive à HETIC, tous les contenus et l'existence même de ce site ne participe qu'à une fiction. Toutes ressemblances avec une situation réelle ne serait que fortuite.",
+        )
     },
     computed: {
         getComponent() {
