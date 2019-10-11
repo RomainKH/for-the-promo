@@ -5,7 +5,7 @@
         </div>
         <div class="text">
             <p>{{ lang === 'fr' ? "Alerte ! L'ouragan Shakira touche la France consultez le site du gouvernement pour avoir toutes les informations en temps réel" : "Alert! Hurricane Shakira is affecting France, check the government website for all the information in real time"}}</p>
-            <a href="http://info-shakira-gouv.netlify.com">Gouv.fr</a>
+            <a href="http://infoshakira-gouv.netlify.com">Gouv.fr</a>
         </div>
     </div>
 </template>

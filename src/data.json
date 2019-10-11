@@ -22,7 +22,7 @@
         },
         "map": {
             "townLatLng": [47.3167, 5.0167],
-            "initialZoom": 5,
+            "initialZoom": 8,
             "incidentLatLngs": [
                 {
                     "type": "flooding",
@@ -30,7 +30,7 @@
                 },
                 {
                     "type": "shelter",
-                    "latLng": [47.9167, 5.9167]
+                    "latLng": [47.3167, 4.8167]
                 },
                 {
                     "type": "electricity",
