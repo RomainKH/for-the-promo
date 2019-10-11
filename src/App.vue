@@ -59,6 +59,8 @@ export default {
             '--accent-color',
             data.colors.accentColor,
         )
+
+        alert('Ce projet ')
     },
     computed: {
         getComponent() {

@@ -15,8 +15,8 @@ export default {
     },
     mounted() {
         this.map = map('map').setView(
-            [43.80478427040863, 4.658995550125838],
-            15,
+            data.dashboard.map.townLatLng,
+            data.dashboard.map.initialZoom,
         )
 
         tileLayer(
