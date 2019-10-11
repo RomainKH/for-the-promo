@@ -35,7 +35,7 @@
             <div class="document-download">
                 <p>{{ translate(data.documents.paragraph)}}</p>
                 <div class="icon">
-                    <img src="../../assets/logo.png" alt="document icon" />
+                    <img :src="require('../../assets/' + logo)" alt="document icon" />
                 </div>
             </div>
         </a>
@@ -81,6 +81,7 @@ export default {
     data() {
         return {
             data: data.dashboard,
+            logo: data.logo.src,
         }
     },
     computed: {
