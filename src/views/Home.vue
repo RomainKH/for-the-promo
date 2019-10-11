@@ -1,19 +1,28 @@
 <template>
-  <div class="home">
-    <Card text="Bonjour mes couilles sur un tatamie ça fait un radeau"
-          image="img/icons/android-chrome-192x192.png"
-    />
-  </div>
+    <div class="home">
+        <div class="container">
+            <Card :img="require('../assets/logo.png')" title="Ma super card 1" />
+            <Card :img="require('../assets/logo.png')" title="Ma super card 2" />
+            <Card :img="require('../assets/logo.png')" title="Ma super card 4" />
+            <Card :img="require('../assets/logo.png')" title="Ma super card 5" />
+        </div>
+    </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import Card from '@/components/Card/'
-
+import Card from '../components/Card'
 export default {
-  name: 'home',
-  components: {
-    Card
-  }
+    name: 'home',
+    components: {
+        Card,
+    },
 }
 </script>
+
+<style lang="scss" scoped>
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+</style>
