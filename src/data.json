@@ -7,7 +7,7 @@
     "colors": {
         "basicColor": "#333333",
         "lightColor": "#acacac",
-        "accentColor": "#3373c3"
+        "accentColor": "#9e8652"
     },
     "dashboard": {
         "firstTitle": {
@@ -22,6 +22,7 @@
         },
         "map": {
             "townLatLng": [48.8512499, 2.4203398],
+            "initialZoom": 10,
             "incidentLatLngs": [
                 {
                     "type": "flooding",
